@@ -1,0 +1,109 @@
+@media only screen and (max-width: 600px) {
+	body {
+		
+		background: linear-gradient(90deg, #3BB19E, #57EF91);
+	}
+
+	.navbar {
+		margin-top: 50px;	
+	}
+
+	.nav-list {
+
+		list-style: none;
+		color: white;
+		text-align: center;
+		font-family: avenir;
+		font-size: 1.3em;
+		text-shadow: 2px 2px pink;
+		margin-top: 10px;
+
+
+	}
+
+	.abt-proj {
+
+		font-family: avenir;
+		font-size: 25px;
+		text-align: center;
+		margin-top: 40px;
+		border: 5px solid white;
+		border-radius: 50px;
+		/*height: 94px;*/
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 19.5px;
+		padding-top: 19.5px;
+		color: white;
+		width: 80%;
+		text-shadow: 2px 2px #3BB19E;
+
+	}
+
+	.abt-proj-bg {
+
+		background-color: white;
+		text-align: center;
+		width: auto;
+		margin-left: 35px;
+		margin-right: 35px;
+		height: 260px;
+		border-radius: 50px;
+		margin-top: 30px;
+		height: auto;
+		padding: 5px;
+
+	}
+
+	.abt-proj-txt {
+		color: #3BB19E;
+		font-family: avenir;
+		padding: 25px 15px;
+	}
+
+	.subtext {
+
+		color: white;
+		text-align: center;
+		font-family: avenir;
+		margin-top: 2px;
+	}
+
+	.hero-image {
+	  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+	  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("waves.png");
+
+	  /* Set a specific height */
+	  height: 200px;
+
+	  /* Position and center the image to scale nicely on all screens */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+	  margin-top: 20px;
+	  /*border-radius: 30px;*/
+	  margin: auto 40px;
+	  margin-top: 50px;
+	  background-color: #336E84;
+	}
+
+	/* Place text in the middle of the image */
+	.hero-text {
+	  text-align: center;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  color: white;
+}
+
+/*.extend {
+
+	height: 300px;
+	width: 100%;
+	background-color: #336E84;
+	margin-left: -3px;
+}*/
+
+}

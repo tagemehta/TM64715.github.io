@@ -76,7 +76,7 @@
 
 		.hero-image {
 		  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-		  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("boardwalk.jpg");
+		  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("boardwalk.jpg");
 
 		  /* Set a specific height */
 		  height: 200px;
@@ -105,7 +105,7 @@
 		  transform: translate(-50%, -50%);
 		  color: white;
 		  font-family: avenir;
-		  font-size: 1.4em;
+		  font-size: 1em;
 		  margin-top: auto;
 	}
 
@@ -157,7 +157,7 @@ and (max-device-width : 1023px) {
 		color: white;
 		font-family: avenir;
 		text-align: center;
-		border: 5px solid white;
+		border: 7px solid white;
 		border-radius: 50px;
 		margin: auto 100px;
 		padding-bottom: 20px; 
@@ -250,7 +250,7 @@ and (max-device-width : 1023px) {
 /*iPad Pro*/
 
 @media only screen 
-and (min-device-width : 1024px) {
+and (min-device-width : 1024px) and (max-device-width: 1366px){
 	body {
 		background: linear-gradient(90deg, #3BB19E, #57EF91);
 		background-size: 150% 150%;
@@ -275,7 +275,7 @@ and (min-device-width : 1024px) {
 		color: white;
 		font-family: avenir;
 		text-align: center;
-		border: 5px solid white;
+		border: 9px solid white;
 		border-radius: 50px;
 		margin: auto 150px;
 		padding-bottom: 20px; 
@@ -289,35 +289,37 @@ and (min-device-width : 1024px) {
 		width: 600px;
 		margin-left: auto;
 		margin-right: auto;
-		height: 360px;
+		height: 100%;
 		border-radius: 50px;
-		padding: 20px;
-		margin-top: 30px;
-		margin-bottom: 30px;
+		padding: 30px 200px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 
 
 	}
 	#abt-proj-bg-1 {
 
-		height: 590px;
+		height: 100%;
 	}
 
 	.abt-proj-txt {
 
 		/*padding-top: 50px;*/
 		font-family: avenir;
-		font-size: 30px;
-		width: 80%;
-		margin: auto;
+		font-size: 2.1em;
+	/*	width: 80%;*/
+		/*margin: auto;
 		margin-top: 10%;
-		margin-bottom: 10%;
+		margin-bottom: 10%;*/
 		color: #3BB19E;
+		padding: 5px;
+		width: 100%;
 
 	}
 	#big-txt {
 
 		font-size: 2em;
-		margin-bottom: 20%;
+/*		margin-bottom: 20%;*/
 	}
 	.subtext {
 
@@ -325,7 +327,7 @@ and (min-device-width : 1024px) {
 			text-align: center;
 			font-family: avenir;
 			margin-top: 12px;
-			font-size: 1.6em;
+			font-size: 1.8em;
 		}
 
 	.hero-image {
@@ -358,9 +360,125 @@ and (min-device-width : 1024px) {
 		transform: translate(-50%, -50%);
 		color: white;
 		font-family: avenir;
-		font-size: 1.4em;
+		font-size: 2em;
 		margin-top: auto;
 
 
 	}
+}
+
+/*Desktop*/
+@media only screen and (min-device-width:1367px) {
+body {
+			background: linear-gradient(90deg, #3BB19E, #57EF91);
+			background-size: 150% 150%;
+			animation: 5s gradient infinite;
+			background-image: url(BG.png);
+			background-size: 200%;
+			background-position: 50%;
+		}
+
+	.nav-list {
+			list-style: none;
+			color: white;
+			text-shadow: 2px 2px pink;
+			text-align: center;
+			padding: 15px;
+			font-size: 2em;
+			font-family: avenir;
+		}
+		.abt-proj {
+
+			color: white;
+			font-family: avenir;
+			text-align: center;
+			border: 3px solid white;
+			border-radius: 50px;
+			margin: auto 600px;
+			padding-bottom: 20px; 
+			padding-top: 20px;
+			font-size: 1em;	
+
+		}
+
+		.abt-proj-bg {
+
+			background-color: white;
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			height: 250px;
+			border-radius: 50px;
+			padding: 20px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+
+		}
+		#abt-proj-bg-1 {
+
+			height: 590px;
+		}
+
+		.abt-proj-txt {
+
+			/*padding-top: 50px;*/
+			font-family: avenir;
+			font-size: 30px;
+			width: 80%;
+			margin: auto;
+			margin-top: 10%;
+			margin-bottom: 10%;
+			color: #3BB19E;
+
+		}
+		#big-txt {
+
+			font-size: 2em;
+			margin-bottom: 20%;
+		}
+		.subtext {
+
+				color: white;
+				text-align: center;
+				font-family: avenir;
+				margin-top: 12px;
+				font-size: 1.6em;
+			}
+
+		.hero-image {
+			  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+			  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("boardwalk.jpg");
+
+			  /* Set a specific height */
+			  height: 400px;
+
+			  /* Position and center the image to scale nicely on all screens */
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			  position: relative;
+			  margin-top: 20px;
+			  /*border-radius: 30px;*/
+			  margin: auto 70px;
+			  margin-top: 50px;
+			  background-color: #336E84;
+			  margin-bottom: 100px;
+			  background-blend-mode: hard-light;
+			  border-radius: 20px;
+			}
+
+		.hero-text {
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-family: avenir;
+			font-size: 1.4em;
+			margin-top: auto;
+
+
+		}
 }

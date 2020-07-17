@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (max-device-width: 600px){
 		body {
 			
 			background: linear-gradient(90deg, #3BB19E, #57EF91);
@@ -132,7 +132,7 @@
 
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1023px) {
+and (max-device-width : 1023px) and (min-width: 768px) and (max-width: 1023px) {
 	body {
 		background: linear-gradient(90deg, #3BB19E, #57EF91);
 		background-size: 150% 150%;
@@ -250,7 +250,7 @@ and (max-device-width : 1023px) {
 /*iPad Pro*/
 
 @media only screen 
-and (min-device-width : 1024px) and (max-device-width: 1366px){
+and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1366px) and (min-width: 1024px) {
 	body {
 		background: linear-gradient(90deg, #3BB19E, #57EF91);
 		background-size: 150% 150%;
@@ -288,10 +288,10 @@ and (min-device-width : 1024px) and (max-device-width: 1366px){
 		background-color: white;
 		width: 600px;
 		margin-left: auto;
-		margin-right: auto;
+		margin-right:auto;
 		height: 100%;
 		border-radius: 50px;
-		padding: 30px 200px;
+		padding: 30px 185px;
 		margin-top: 40px;
 		margin-bottom: 40px;
 
@@ -314,12 +314,12 @@ and (min-device-width : 1024px) and (max-device-width: 1366px){
 		color: #3BB19E;
 		padding: 5px;
 		width: 100%;
+		text-shadow: .5px .5px black;
 
 	}
 	#big-txt {
 
 		font-size: 2em;
-/*		margin-bottom: 20%;*/
 	}
 	.subtext {
 
@@ -335,7 +335,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px){
 		  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("boardwalk.jpg");
 
 		  /* Set a specific height */
-		  height: 400px;
+		  height: 200px;
 
 		  /* Position and center the image to scale nicely on all screens */
 		  background-position: center;
@@ -368,14 +368,15 @@ and (min-device-width : 1024px) and (max-device-width: 1366px){
 }
 
 /*Desktop*/
-@media only screen and (min-device-width:1367px) {
-body {
+@media only screen and (min-device-width:1367px) and (min-width: 1367px) {
+	body {
 			background: linear-gradient(90deg, #3BB19E, #57EF91);
 			background-size: 150% 150%;
 			animation: 5s gradient infinite;
 			background-image: url(BG.png);
 			background-size: 200%;
 			background-position: 50%;
+			animation: 30s gradient infinite;
 		}
 
 	.nav-list {
@@ -384,20 +385,25 @@ body {
 			text-shadow: 2px 2px pink;
 			text-align: center;
 			padding: 15px;
-			font-size: 2em;
+			font-size: 3em;
 			font-family: avenir;
+			border: 9px solid white;
+			margin: auto 400px;
+			border-radius: 50px;
+
 		}
 		.abt-proj {
 
 			color: white;
 			font-family: avenir;
 			text-align: center;
-			border: 3px solid white;
+			/*border: 3px solid white;*/
 			border-radius: 50px;
 			margin: auto 600px;
 			padding-bottom: 20px; 
 			padding-top: 20px;
-			font-size: 1em;	
+			font-size: 1.6em;
+			margin-top: 20px;	
 
 		}
 
@@ -407,7 +413,6 @@ body {
 			width: 600px;
 			margin-left: auto;
 			margin-right: auto;
-			height: 250px;
 			border-radius: 50px;
 			padding: 20px;
 			margin-top: 30px;
@@ -417,24 +422,25 @@ body {
 		}
 		#abt-proj-bg-1 {
 
-			height: 590px;
+			height: ;
 		}
 
 		.abt-proj-txt {
 
 			/*padding-top: 50px;*/
 			font-family: avenir;
-			font-size: 30px;
+			font-size: 20px;
 			width: 80%;
 			margin: auto;
 			margin-top: 10%;
 			margin-bottom: 10%;
 			color: #3BB19E;
+			text-shadow: .5px .5px black;
 
 		}
 		#big-txt {
 
-			font-size: 2em;
+			font-size: 20px;
 			margin-bottom: 20%;
 		}
 		.subtext {
@@ -443,7 +449,7 @@ body {
 				text-align: center;
 				font-family: avenir;
 				margin-top: 12px;
-				font-size: 1.6em;
+				font-size: 1.1em;
 			}
 
 		.hero-image {
@@ -480,5 +486,18 @@ body {
 			margin-top: auto;
 
 
+		}
+		@keyframes gradient {
+			0% {
+				background-position: 30% 50%;
+			}
+			50% {
+				background-position: 60% 50%;
+			}
+
+			
+			100% {
+				background-position: 30% 50%;
+			}
 		}
 }

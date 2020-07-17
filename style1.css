@@ -394,6 +394,11 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 			border-radius: 50px;
 
 		}
+
+	.nav-list:hover {
+
+		text-shadow: 4px 4px #3BB19E;
+	}
 		.abt-proj {
 
 			color: white;
@@ -406,6 +411,12 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 			padding-top: 20px;
 			font-size: 1.6em;
 			margin-top: 20px;	
+
+		}
+
+		.abt-proj:hover {
+
+			text-shadow: 3px 3px #3BB19E;
 
 		}
 
@@ -439,6 +450,9 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 			color: #3BB19E;
 			text-shadow: .5px .5px black;
 
+		}
+		.abt-proj-txt:hover {
+			text-shadow: 0px 0px black;
 		}
 		#big-txt {
 
@@ -488,6 +502,10 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 			margin-top: auto;
 
 
+		}
+
+		.hero-text:hover {
+			font-size: 2em;
 		}
 		@keyframes gradient {
 			0% {

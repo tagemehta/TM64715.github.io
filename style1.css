@@ -19,10 +19,11 @@
 			color: white;
 			text-align: center;
 			font-family: avenir;
-			font-size: 1.3em;
 			text-shadow: 2px 2px pink;
+			font-size: 1.3em;
 			margin-top: 10px;
-			margin-right: auto;
+			margin-right: 30px;
+			padding-left: 30px;
 
 
 		}

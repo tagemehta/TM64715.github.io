@@ -44,9 +44,6 @@
 			color: white;
 			width: 80%;
 			text-shadow: 2px 2px #3BB19E;
-			/*text-decoration: line-through;*/
-			text-decoration: underline;
-
 		}
 
 		.abt-proj-bg {
@@ -83,7 +80,7 @@
 		  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("boardwalk.jpg");
 
 		  /* Set a specific height */
-		  width: 20px;
+		  height: 200px;
 
 		  /* Position and center the image to scale nicely on all screens */
 		  background-position: center;

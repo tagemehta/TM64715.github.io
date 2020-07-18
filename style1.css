@@ -3,7 +3,7 @@
 			
 			background: linear-gradient(90deg, #3BB19E, #57EF91);
 			background-size: 150% 150%;
-			animation: 5s gradient infinite;
+			animation: 13s gradient infinite;
 			background-image: url(BG.png);
 			background-size: 400%;
 			background-position: 50%;
@@ -113,23 +113,19 @@
 		  margin-top: auto;
 	}
 
-	/*.extend {
-
-		height: 300px;
-		width: 100%;
-		background-color: #336E84;
-		margin-left: -3px;
-	}*/
-	/*@keyframes gradient {
+	@keyframes gradient {
 		0% {
-			background-position: 20% 50%;
+			background-position: 30% 50%;
 		}
 		50% {
-			background-position: 80% 50%;
+			background-position: 50% 50%;
 		}
+
+		
 		100% {
-			background-position: 0% 50%;
-		}*/
+			background-position: 30% 50%;
+		}
+	}
 }
 
 /*iPad*/
@@ -140,7 +136,7 @@ and (max-device-width : 1023px) and (min-width: 768px) and (max-width: 1023px) {
 	body {
 		background: linear-gradient(90deg, #3BB19E, #57EF91);
 		background-size: 150% 150%;
-		animation: 5s gradient infinite;
+		animation: 20s gradient infinite;
 		background-image: url(BG.png);
 		background-size: 200%;
 		background-position: 50%;
@@ -249,6 +245,20 @@ and (max-device-width : 1023px) and (min-width: 768px) and (max-width: 1023px) {
 
 
 	}
+
+		@keyframes gradient {
+			0% {
+				background-position: 30% 50%;
+			}
+			50% {
+				background-position: 50% 50%;
+			}
+
+			
+			100% {
+				background-position: 30% 50%;
+			}
+		}
 }
 
 /*iPad Pro*/
@@ -258,7 +268,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 	body {
 		background: linear-gradient(90deg, #3BB19E, #57EF91);
 		background-size: 150% 150%;
-		animation: 5s gradient infinite;
+		animation: 20s gradient infinite;
 		background-image: url(BG.png);
 		background-size: 200%;
 		background-position: 50%;
@@ -369,6 +379,20 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 
 
 	}
+
+	@keyframes gradient {
+			0% {
+				background-position: 30% 50%;
+			}
+			50% {
+				background-position: 50% 50%;
+			}
+
+			
+			100% {
+				background-position: 30% 50%;
+			}
+		}
 }
 
 /*Desktop*/

@@ -44,6 +44,8 @@
 			color: white;
 			width: 80%;
 			text-shadow: 2px 2px #3BB19E;
+			/*text-decoration: line-through;*/
+			text-decoration: underline;
 
 		}
 
@@ -81,7 +83,7 @@
 		  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("boardwalk.jpg");
 
 		  /* Set a specific height */
-		  height: 200px;
+		  width: 20px;
 
 		  /* Position and center the image to scale nicely on all screens */
 		  background-position: center;
@@ -337,7 +339,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 		  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("boardwalk.jpg");
 
 		  /* Set a specific height */
-		  height: 200px;
+		  height: 300px;
 
 		  /* Position and center the image to scale nicely on all screens */
 		  background-position: center;
@@ -370,7 +372,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 }
 
 /*Desktop*/
-@media only screen and (min-device-width:1367px) and (min-width: 1367px) {
+@media only screen and (min-device-width:1367px) and (min-width: 1000px) {
 	body {
 			background: linear-gradient(90deg, #3BB19E, #57EF91);
 			background-size: 150% 150%;
@@ -408,7 +410,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 			text-align: center;
 			/*border: 3px solid white;*/
 			border-radius: 50px;
-			margin: auto 600px;
+			margin: auto;
 			padding-bottom: 20px; 
 			padding-top: 20px;
 			font-size: 1.6em;
@@ -484,7 +486,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 			  position: relative;
 			  margin-top: 20px;
 			  /*border-radius: 30px;*/
-			  margin: auto 70px;
+			  margin: auto 300px;
 			  margin-top: 50px;
 			  background-color: #336E84;
 			  margin-bottom: 100px;

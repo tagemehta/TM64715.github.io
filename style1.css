@@ -187,7 +187,7 @@ and (max-device-width : 1023px) and (min-width: 768px) and (max-width: 1023px) {
 		font-family: avenir;
 		font-size: 30px;
 		width: 80%;
-		margin: auto;
+		margin: 10% 10%;
 		margin-top: 10%;
 		margin-bottom: 10%;
 		color: #3BB19E;

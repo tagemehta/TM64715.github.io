@@ -168,7 +168,7 @@ and (max-device-width : 1023px) and (min-width: 768px) and (max-width: 1023px) {
 		width: 600px;
 		margin-left: auto;
 		margin-right: auto;
-		height: 360px;
+		height: auto;
 		border-radius: 50px;
 		padding: 20px;
 		margin-top: 30px;
@@ -178,7 +178,7 @@ and (max-device-width : 1023px) and (min-width: 768px) and (max-width: 1023px) {
 	}
 	#abt-proj-bg-1 {
 
-		height: 590px;
+		height: auto;
 	}
 
 	.abt-proj-txt {
@@ -310,7 +310,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 	}
 	#abt-proj-bg-1 {
 
-		height: 100%;
+		height: auto;
 	}
 
 	.abt-proj-txt {
@@ -462,7 +462,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 		}
 		#abt-proj-bg-1 {
 
-			height: ;
+			height: 30%;
 		}
 
 		.abt-proj-txt {
@@ -482,7 +482,7 @@ and (min-device-width : 1024px) and (max-device-width: 1366px) and (max-width: 1
 		#big-txt {
 
 			font-size: 20px;
-			margin-bottom: 20%;
+			margin-bottom: ;
 		}
 		.subtext {
 

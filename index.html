@@ -6,26 +6,78 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style1.css">
 
+
 </head>
 <body>
 	<nav class = "navbar">
 		<ul class = "nav-list">
-			<span><li class="navbar-item">TAGE MEHTA</li></span>
+			<span><li class="text-center">TAGE MEHTA</li></span>
 		</ul>
 	</nav>
-	<h1 class = "abt-proj">About This Project</h1>
-	<div class = "abt-proj-bg" id = "small-proj-bg">
-		<p class="abt-proj-txt">This is my demo website.  It is responsive to 4 breakpoints (iPhone, iPad, iPad Pro).  It was made with HTML and CSS in Sublime and designed in Adobe XD.  There is an animated background made using the keyframes query.  There are also hover effects on the image text and headers.</p>
-	</div>
 	<h1 class="abt-proj">About Me</h1>
 	<div class="abt-proj-bg" id="abt-proj-bg-1">
-		<p class="abt-proj-txt" id = "big-txt">I'm 14 years old.  I enjoy playing soccer and running.  I am also a sneakerhead/sneaker reseller.  I hope to learn JavaScript in the coming months and use my skills for real projects.</p>
+		<p class="abt-proj-txt" id = "big-txt">I am a high school student. I know multiple programming languages including JavaScript and PHP.  I can build and design websites with HTML and CSS and I can use a CMS like Wordpress to give you whatever product you need</p>
 	</div>
-	<h1 class="abt-proj">A Quote</h1>
-	<p class="subtext">Because Why Not</p>
-	<div class="hero-image">
-		<p class="hero-text"><quote>Be the change you want to see in the world.</quote>
-		<br>--Mahtma Gandhi</p>
-	</div>
+	<h1 class = "abt-proj">Past Personal Projects</h1>
+	<section class="projects">
+	    <div class="card">
+           <img src = "icon.png" class="card-image">
+            <div class="container">
+                <h4><b>Chrome Extension</b></h4>
+                <h6>HTML, CSS, JS</h6>
+                <a href = "start.html" class="cardLink">Evidence Locker</a>
+              </div>
+        </div>
+        <div class = "card">
+            <div class="container">
+                <img src = "Spotify_Icon_RGB_Green.png" class = "card-image">
+                <h4 style="padding-top: 0; margin-bottom: 0;"><b>Spotify Reccs</b></h4>
+                <h6>PHP</h5>
+                <a href = "http://magic-music.infinityfreeapp.com/SpotifyAPI" class="cardLink">Magic Music</a>
+            </div>
+        </div>
+	</section>	
+	<style>
+        .projects {
+            display: flex;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: avenir;
+            width: 200px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        .card-image {
+            width: 128px;
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+          padding: 2px 16px;
+        }
+        
+        .container h4 {
+            font-family: avenir;
+            margin-top: 0;
+        }
+        
+        .cardLink {
+            line-height: 20px;
+            background-color: aliceblue;
+            padding: 7px;
+            color: #336e84;
+            font-weight: 800;
+            border-radius: 10px;
+        }
+    </style>
 </body>
 </html>

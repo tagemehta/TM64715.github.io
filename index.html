@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="sr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
             <dl>
             <dt><a href = "#abtMe">About Me</a></dt>
             <dt><a href = "#pastProjects">My Past Projects</a></dt>
-            <dt><a>Contact Me</a></dt>
+            <dt><a href="#contactMe">Contact Me</a></dt>
             </dl>
         </nav>
         <h1 class="text_big_1">Hello, I'm <p class = "specialText">Tage Mehta</p></h1>
@@ -33,7 +33,7 @@
     <section class="fullpage sectionBanner aboutMeBanner row" id = "abtMe">
         <img src = "My Skills.png" style="max-width: 100%;" class="mySkills seven columns">
         <div class ="aboutMe">
-            <h1 class="aboutMeHeader three columns">About Me</h1>
+            <h1 class="aboutMeHeader five columns">About Me</h1>
             <p class="aboutMeTxt five columns">As a web developer, I focus more on the Front-End of a site.  This means design, user experience and user interface.  I am more than capable of making a website for your small business or your blog and can include you as much or as little in the process as you would like.  For the Back-End I am less comfortable but can still use PHP to create a personal experience for each user and perform, smaller server-side tasks.</p>
         </div>
     </section>
@@ -58,19 +58,24 @@
         <div class = "sectionDescription magicDescription">
             <h1>Magic Music</h1>
             <p class="sectionP magicP">Magic Music is a piece of software that taps into the Spotify API and gives users recommendations.  Written fully in PHP, it gives each user a unique experience.   Additionally, users can pick songs to fit their current mood and other attributes.</p>
-            <a class = "seeMore">See More</a>
+            <a class = "seeMore" href="http://magic-music.infinityfreeapp.com/SpotifyAPI">See More</a>
         </div>
     </section>
-    <section class="fullpage sectionBanner contactBanner row">
+    <section class="fullpage sectionBanner contactBanner row" id="contactMe">
         <h1 class="center contactHeader">Contact Me</h1>
         <img src = "Email.svg" style = "max-width: 100%;" class="emailImg rotate">
         <a href = "mailto:tage.mehta@gmail.com" class="contactEmail">tage.mehta@gmail.com</a>
 
     </section>
     <script>
-        ScrollReveal().reveal('.fullpage', { delay: 400 });
-        ScrollReveal().reveal('.firstPage', { delay: 500 });
-        ScrollReveal().reveal('.sectionDescription', { delay: 500 });
+        ScrollReveal().reveal('.fullpage', { delay: 400, viewFactor: 0.1,});
+        ScrollReveal().reveal('.firstPage', 
+        { 
+            delay: 500, 
+        });
+        ScrollReveal().reveal('.sectionDescription, .aboutMeTxt, .aboutMeHeader', { delay: 300,  reset:true, distance: '-80px'});
+    ScrollReveal().reveal(".emailImg", {delay: 500, reset:true})
+    ScrollReveal().reveal("img", {delay: 300, rotate: {y: 180}, reset:true })
 	</script>
 </body>
 </html>

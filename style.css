@@ -1,10 +1,12 @@
 html {
     scroll-behavior: smooth;
+    background-color: #29464D;;
   }
 
 body {
     margin: 0;
     font-family: "Montserrat";
+    background-color: #29464D;
 }
 
 .banner {
@@ -273,7 +275,7 @@ p, dt {
 
   a {
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 22px;
     padding-bottom: 4px;
     text-decoration: none;
   }
@@ -325,3 +327,10 @@ p, dt {
       transform: rotate(359deg);
     }
   }
+html.sr, .fullpage {
+  visibility: hidden;
+}
+
+.aboutMeBanner {
+  background-color: #71c79b;
+}

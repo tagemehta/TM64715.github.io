@@ -16,7 +16,7 @@ h1 {
     font-weight: 900;
 }
 
-p {
+p, dt {
     color: white;
 }
 .text_big_1 {
@@ -255,5 +255,73 @@ p {
 
 
   .aboutMeTxt {
-      text-align: center;
+    margin-left: 40px;
+    font-size: 19px;
+  }
+
+
+  nav {
+    float: right;
+  }
+
+  dt {
+    display: inline;
+    margin-right: 10px;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  a {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding-bottom: 4px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #FFFFFF;
+    border-bottom: 4px solid #FFFFFF;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .contactHeader {
+    padding-top: 20px
+  }
+
+
+  .contactBanner {
+    background-color: #436286;
+    height: 370px;
+  }
+
+  .emailImg {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .rotate {
+    animation: rotation 2s;
+  }
+.contactEmail {
+  text-align: center;
+  font-weight: 900;
+  display: block;
+  margin: auto;
+}
+  .contactEmail:hover {
+    border-bottom: none;
+    text-shadow: 0px 0px 20px #fff;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
   }

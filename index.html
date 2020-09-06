@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My AniView Page</title>
+    <title>Tage Mehta || Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel = "stylesheet" href = "Skeleton/css/skeleton.css">
     <link rel = "stylesheet" href = "style.css">
@@ -13,10 +13,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body style = "background-color: #29464D;">
-    <nav></nav>
     <div class = "firstPage banner bannerText" class = "row">
+        <nav>
+            <dl>
+            <dt><a href = "#abtMe">About Me</a></dt>
+            <dt><a href = "#pastProjects">My Past Projects</a></dt>
+            <dt><a>Contact Me</a></dt>
+            </dl>
+        </nav>
         <h1 class="text_big_1">Hello, I'm <p class = "specialText">Tage Mehta</p></h1>
-        <h1 class="text_big_2">A Self-Taught Front End <p class="specialText">Web Developer</p></h1>
+        <h1 class="text_big_2">A Self-Taught <p class="specialText">Web Developer</p></h1>
         <svg class="arrows">
             <path class="a1" d="M0 0 L30 32 L60 0"></path>
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -24,14 +30,14 @@
         </svg>
     </div>
 
-    <section class="fullpage sectionBanner row">
+    <section class="fullpage sectionBanner aboutMeBanner row" id = "abtMe">
         <img src = "My Skills.png" style="max-width: 100%;" class="mySkills seven columns">
         <div class ="aboutMe">
-            <h1 class="aboutMeHeader">About Me</h1>
-                <p class="aboutMeTxt">Theser are things about me</p>
+            <h1 class="aboutMeHeader three columns">About Me</h1>
+            <p class="aboutMeTxt five columns">As a web developer, I focus more on the Front-End of a site.  This means design, user experience and user interface.  I am more than capable of making a website for your small business or your blog and can include you as much or as little in the process as you would like.  For the Back-End I am less comfortable but can still use PHP to create a personal experience for each user and perform, smaller server-side tasks.</p>
         </div>
     </section>
-    <section class = "fullpage pastProjectsBanner">
+    <section class = "fullpage pastProjectsBanner" id = "pastProjects">
         <h1>Here Are Some of My Past Projects</h1>
     </section>
     <section class="fullpage sectionBanner evidenceLockerBanner row" id ="evLocker">
@@ -55,9 +61,16 @@
             <a class = "seeMore">See More</a>
         </div>
     </section>
+    <section class="fullpage sectionBanner contactBanner row">
+        <h1 class="center contactHeader">Contact Me</h1>
+        <img src = "Email.svg" style = "max-width: 100%;" class="emailImg rotate">
+        <a href = "mailto:tage.mehta@gmail.com" class="contactEmail">tage.mehta@gmail.com</a>
+
+    </section>
     <script>
         ScrollReveal().reveal('.fullpage', { delay: 400 });
         ScrollReveal().reveal('.firstPage', { delay: 500 });
+        ScrollReveal().reveal('.sectionDescription', { delay: 500 });
 	</script>
 </body>
 </html>

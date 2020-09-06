@@ -1,83 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Website</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style1.css">
-
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My AniView Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel = "stylesheet" href = "Skeleton/css/skeleton.css">
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
-<body>
-	<nav class = "navbar">
-		<ul class = "nav-list">
-			<span><li class="text-center">TAGE MEHTA</li></span>
-		</ul>
-	</nav>
-	<h1 class="abt-proj">About Me</h1>
-	<div class="abt-proj-bg" id="abt-proj-bg-1">
-		<p class="abt-proj-txt" id = "big-txt">I am a high school student. I know multiple programming languages including JavaScript and PHP.  I can build and design websites with HTML and CSS and I can use a CMS like Wordpress to give you whatever product you need</p>
-	</div>
-	<h1 class = "abt-proj">Past Personal Projects</h1>
-	<section class="projects">
-	    <div class="card">
-           <img src = "icon.png" class="card-image">
-            <div class="container">
-                <h4><b>Chrome Extension</b></h4>
-                <h6>HTML, CSS, JS</h6>
-                <a href = "start.html" class="cardLink">Evidence Locker</a>
-              </div>
-        </div>
-        <div class = "card">
-            <div class="container">
-                <img src = "Spotify_Icon_RGB_Green.png" class = "card-image">
-                <h4 style="padding-top: 0; margin-bottom: 0;"><b>Spotify Reccs</b></h4>
-                <h6>PHP</h5>
-                <a href = "http://magic-music.infinityfreeapp.com/SpotifyAPI" class="cardLink">Magic Music</a>
-            </div>
-        </div>
-	</section>	
-	<style>
-        .projects {
-            display: flex;
-        }
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: avenir;
-            width: 200px;
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-        }
-        .card:hover {
-          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        
-        .card-image {
-            width: 128px;
-        }
+<body style = "background-color: #29464D;">
+    <nav></nav>
+    <div class = "firstPage banner bannerText" class = "row">
+        <h1 class="text_big_1">Hello, I'm <p class = "specialText">Tage Mehta</p></h1>
+        <h1 class="text_big_2">A Self-Taught Front End <p class="specialText">Web Developer</p></h1>
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+    </div>
 
-        /* Add some padding inside the card container */
-        .container {
-          padding: 2px 16px;
-        }
-        
-        .container h4 {
-            font-family: avenir;
-            margin-top: 0;
-        }
-        
-        .cardLink {
-            line-height: 20px;
-            background-color: aliceblue;
-            padding: 7px;
-            color: #336e84;
-            font-weight: 800;
-            border-radius: 10px;
-        }
-    </style>
+    <section class="fullpage sectionBanner row">
+        <img src = "My Skills.png" style="max-width: 100%;" class="mySkills seven columns">
+        <div class ="aboutMe">
+            <h1 class="aboutMeHeader">About Me</h1>
+                <p class="aboutMeTxt">Theser are things about me</p>
+        </div>
+    </section>
+    <section class = "fullpage pastProjectsBanner">
+        <h1>Here Are Some of My Past Projects</h1>
+    </section>
+    <section class="fullpage sectionBanner evidenceLockerBanner row" id ="evLocker">
+        <figure class = "sectionFig six columns">
+            <img src = "EvLocker.svg" class = "evLockerImage" height="700px">
+        </figure> 
+        <div class = "sectionDescription">
+            <h1>Evidence Locker</h1>
+            <p class="sectionP">Evidence Locker is a chrome extension that allows people to cite sources at the click of a button.  It was mainly created for debaters but works for any kind of research.  It was programmed for specific sites as well as to search the metadata of a site for the relevant information</p>
+            <a class = "seeMore" href = "start.html">See More</a>
+        </div>
+ 
+    </section>
+    <section class="fullpage sectionBanner magicBanner row">
+        <figure class = "sectionFig six columns">
+            <img src = "Spotify.svg" class = "spotifyImage" width = "300px">
+        </figure> 
+        <div class = "sectionDescription magicDescription">
+            <h1>Magic Music</h1>
+            <p class="sectionP magicP">Magic Music is a piece of software that taps into the Spotify API and gives users recommendations.  Written fully in PHP, it gives each user a unique experience.   Additionally, users can pick songs to fit their current mood and other attributes.</p>
+            <a class = "seeMore">See More</a>
+        </div>
+    </section>
+    <script>
+        ScrollReveal().reveal('.fullpage', { delay: 400 });
+        ScrollReveal().reveal('.firstPage', { delay: 500 });
+	</script>
 </body>
 </html>
